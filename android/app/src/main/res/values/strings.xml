@@ -1,0 +1,18 @@
+<resources>
+    <!-- Customize your app name -->
+    <string name="app_name">Silvi</string>
+
+    <!-- Added for deep linking configuration -->
+    <string name="deep_linking_scheme">silvi</string>
+    <string name="deep_linking_host">www.silvi.asia</string>
+
+    <!-- Added for react-native-fbsdk configuration -->
+    <!-- Change the values based on current environment -->
+    <string name="facebook_app_id">1652642161746188</string>
+    <string name="fb_login_protocol_scheme">fb1652642161746188</string>
+    <string name="facebook_client_token">4d48415da813eefc6006ea566e346b1b</string>
+
+    <!-- Added for react-native-maps configuration -->
+    <!-- Change the values based on current environment -->
+    <string name="google_maps_api_key">AIzaSyAFLsb86lhliNoSabTccZs1vY7ZP6l0rE8</string>
+</resources>

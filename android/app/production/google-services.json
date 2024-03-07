@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "745093941879",
+    "project_id": "silvi-asia",
+    "storage_bucket": "silvi-asia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745093941879:android:2a6376c6e343aec897d472",
+        "android_client_info": {
+          "package_name": "silvi.asia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745093941879-0tbl0vgp5gcjq68o5sjlgc9rma3cp9nt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKBqyO0_XBavvP4CY1ZBuGG0pKecV4Vcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745093941879-0tbl0vgp5gcjq68o5sjlgc9rma3cp9nt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

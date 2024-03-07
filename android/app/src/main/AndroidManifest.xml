@@ -1,0 +1,109 @@
+<manifest 
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  package="development.silvi.asia">
+
+    <!-- Features -->
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+  
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- Queries -->
+    <queries>
+      <intent>
+        <action android:name="android.intent.action.VIEW"/>
+        <data android:scheme="http"/>
+      </intent>
+      <intent>
+        <action android:name="android.intent.action.VIEW"/>
+        <data android:scheme="https"/>
+      </intent>
+    </queries>
+    <!-- Added for react-native-image-crop-picker configuration -->
+    <queries>
+      <intent>
+        <action android:name="android.media.action.IMAGE_CAPTURE" />
+      </intent>
+      <intent>
+        <action android:name="android.intent.action.GET_CONTENT" />
+        <data android:mimeType="image/*" />
+      </intent>
+      <intent>
+        <action android:name="android.intent.action.PICK" />
+        <data android:mimeType="image/*" />
+      </intent>
+      <intent>
+        <action android:name="android.intent.action.CHOOSER" />
+      </intent>
+    </queries>
+
+    <application 
+      android:name=".MainApplication" 
+      android:label="@string/app_name" 
+      android:icon="@mipmap/ic_launcher" 
+      android:roundIcon="@mipmap/ic_launcher_round" 
+      android:allowBackup="false" 
+      android:theme="@style/AppTheme">
+        <!-- Activities -->
+        <activity 
+          android:name=".MainActivity" 
+          android:label="@string/app_name" 
+          android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode" 
+          android:launchMode="singleTask" 
+          android:screenOrientation="portrait" 
+          android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <!-- Added for deep linking configuration -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/deep_linking_scheme"/>
+                <data android:scheme="https" android:host="@string/deep_linking_host" />
+                <data android:scheme="http" android:host="@string/deep_linking_host" />
+            </intent-filter>
+        </activity>
+        <!-- Added for react-native-fbsdk configuration -->
+        <activity 
+          android:name="com.facebook.FacebookActivity" 
+          android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" 
+          android:label="@string/app_name"/>
+        <activity 
+          android:name="com.facebook.CustomTabActivity" 
+          android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Meta Data -->
+        <!-- Added for react-native-fbsdk configuration -->
+        <meta-data 
+          android:name="com.facebook.sdk.ApplicationId" 
+          android:value="@string/facebook_app_id"/>
+        <meta-data 
+          android:name="com.facebook.sdk.ClientToken" 
+          android:value="@string/facebook_client_token"/>
+        <!-- Added for react-native-maps configuration -->
+        <meta-data
+          android:name="com.google.android.geo.API_KEY"
+          android:value="@string/google_maps_api_key"/>
+
+        <!-- Providers -->
+        <provider 
+          android:authorities="com.facebook.app.FacebookContentProvider1234" 
+          android:name="com.facebook.FacebookContentProvider" 
+          android:exported="true"/>
+  </application>
+</manifest>

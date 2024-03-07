@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "96388230449",
+    "project_id": "silvi-asia-staging",
+    "storage_bucket": "silvi-asia-staging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96388230449:android:cefbce3893f6afec419410",
+        "android_client_info": {
+          "package_name": "staging.silvi.asia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96388230449-123ot4lhc4366kkmuj0tpqfkh7jtp4hv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "staging.silvi.asia",
+            "certificate_hash": "24675e57371d40122a84b578ecec44e5cac1614f"
+          }
+        },
+        {
+          "client_id": "96388230449-onns8tclvm11lethe6pkpbisb5isorm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "staging.silvi.asia",
+            "certificate_hash": "4a7a9c7356b64e0f5ba7854c75f77f0eeb03f68b"
+          }
+        },
+        {
+          "client_id": "96388230449-ja38tv13og0pqksn2hirruhoaa8a9ntj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWPZhaq7WW47PbhkWFYpxZhLFwGZTpals"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96388230449-ja38tv13og0pqksn2hirruhoaa8a9ntj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

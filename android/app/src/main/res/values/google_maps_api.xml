@@ -1,0 +1,5 @@
+<!-- Added for react-native-maps configuration -->
+<!-- Change the values based on current environment -->
+<resources>
+  <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAFLsb86lhliNoSabTccZs1vY7ZP6l0rE8</string>
+</resources>
